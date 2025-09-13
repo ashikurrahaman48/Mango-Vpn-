@@ -1,40 +1,33 @@
 ---
-name: Bug Report 🐛
-about: Create a detailed report to help us improve Mango VPN
-title: '[BUG] '
-labels: 'bug'
+name: Security Vulnerability Report 🔒
+about: Report a security vulnerability in Mango VPN
+title: '[SECURITY] '
+labels: 'security'
 assignees: ''
-
 ---
 
-**Describe the Bug**
-A clear and concise description of what the bug is.
+**IMPORTANT**: For critical security vulnerabilities, please report privately to our security team instead of creating a public issue.
+
+**Describe the Vulnerability**
+A clear and concise description of the security vulnerability.
+
+**Impact**
+What is the potential impact of this vulnerability if exploited?
 
 **To Reproduce**
-Steps to reproduce the behavior:
-1. Open Mango VPN
-2. Select server '...'
-3. Click on '...'
-4. See error
+Steps to reproduce the vulnerability:
+1. Configure VPN with '...'
+2. Connect to '...'
+3. Perform '...'
+4. See vulnerability
 
-**Expected Behavior**
-A clear and concise description of what you expected to happen.
+**Technical Details**
+- Affected Component: [e.g. Authentication, Encryption, Network Protocol]
+- Affected Versions: [e.g. 1.0.0 - 1.2.0]
+- Affected Platforms: [e.g. Android, iOS, Windows]
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Device Information:**
-- Device Type: [Desktop/Smartphone]
-- OS: [e.g. Windows 10, Android 13, iOS 16]
-- Mango VPN Version: [e.g. 1.2.0]
-- Connection Type: [e.g. WiFi, Mobile Data]
-
-**VPN Connection Details:**
-- Server Location: [e.g. US East, Singapore]
-- Protocol Used: [e.g. OpenVPN, WireGuard]
-- Connection Time: [How long were you connected before the issue occurred?]
+**Suggested Fix**
+If you have any suggestions for fixing the vulnerability, please describe them here.
 
 **Additional Context**
-- Does this happen with specific websites/services?
-- Does this happen with all servers or specific ones?
-- Any other relevant information about the problem
+Add any other relevant security context or screenshots here.
