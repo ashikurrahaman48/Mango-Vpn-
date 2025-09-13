@@ -1,0 +1,20 @@
+# Default owners for the entire repository
+* @mangovpn/core-team
+
+# Platform-specific owners
+/android/ @mangovpn/android-team
+/ios/ @mangovpn/ios-team
+/desktop/ @mangovpn/desktop-team
+/web/ @mangovpn/web-team
+
+# Documentation
+/docs/ @mangovpn/docs-team
+README.md @mangovpn/docs-team
+
+# Security-related files
+SECURITY.md @mangovpn/security-team
+.github/workflows/security-scan.yml @mangovpn/security-team
+
+# Infrastructure
+.github/workflows/ @mangovpn/devops-team
+Dockerfile @mangovpn/devops-team
