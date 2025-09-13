@@ -96,11 +96,22 @@ export class VpnClient {
     this.currentServer = server;
     logger.info(`Connecting to ${this.currentServer.city}...`);
     this.setState(ConnectionStatus.CONNECTING);
+
+    // Clear any previous timeout
+    if (this.connectionTimeout) clearTimeout(this.connectionTimeout);
     
     // Simulate network delay for connection
     this.connectionTimeout = setTimeout(() => {
-      this.setState(ConnectionStatus.CONNECTED);
-      this.startStatsUpdate();
+      // Simulate connection failure (e.g., 30% chance)
+      if (Math.random() < 0.3) {
+        const errorMessage = `Connection to ${this.currentServer?.city} failed. The server might be busy or unreachable.`;
+        logger.error(errorMessage);
+        this.emit('error', errorMessage);
+        this.setState(ConnectionStatus.DISCONNECTED);
+      } else {
+        this.setState(ConnectionStatus.CONNECTED);
+        this.startStatsUpdate();
+      }
     }, 2000);
   }
 

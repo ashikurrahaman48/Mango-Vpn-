@@ -1,4 +1,3 @@
-
 // pages/admin/servers.tsx
 import React, { useState, useEffect } from 'react';
 import type { AdminServer, ServerStatus } from '../../types/admin';

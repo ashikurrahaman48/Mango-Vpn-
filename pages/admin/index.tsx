@@ -1,4 +1,3 @@
-
 // pages/admin/index.tsx
 import React, { useState, useEffect } from 'react';
 import type { DashboardStats } from '../../types/admin';

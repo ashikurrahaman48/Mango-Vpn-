@@ -4,7 +4,6 @@ import { VpnClient } from '../client';
 import { ConnectionStatus, type Stats, type Server } from '../types/client';
 
 export const useVpnClient = () => {
-  // Use a ref to hold the client instance so it persists across re-renders
   const clientRef = useRef<VpnClient | null>(null);
 
   const [connectionStatus, setConnectionStatus] = useState<ConnectionStatus>(ConnectionStatus.DISCONNECTED);
@@ -15,9 +14,9 @@ export const useVpnClient = () => {
     downloadSpeed: 0,
     uploadSpeed: 0,
   });
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // Initialize the client only once
     if (!clientRef.current) {
       clientRef.current = new VpnClient();
     }
@@ -31,24 +30,35 @@ export const useVpnClient = () => {
       setStats({ ...newStats });
     };
 
+    const handleError = (errorMessage: string) => {
+        setError(errorMessage);
+    };
+
     client.on('stateChange', handleStateChange);
     client.on('statsUpdate', handleStatsUpdate);
+    client.on('error', handleError);
 
-    // Cleanup function to remove listeners and disconnect when the component unmounts
     return () => {
       client.off('stateChange', handleStateChange);
       client.off('statsUpdate', handleStatsUpdate);
+      client.off('error', handleError);
       client.disconnect();
     };
-  }, []); // Empty dependency array ensures this effect runs only once
+  }, []);
 
   const connect = useCallback((server: Server) => {
+    setError(null); // Clear previous errors on new connection attempt
     clientRef.current?.connect(server);
   }, []);
 
   const disconnect = useCallback(() => {
+    setError(null);
     clientRef.current?.disconnect();
   }, []);
 
-  return { connectionStatus, stats, connect, disconnect };
+  const clearError = useCallback(() => {
+    setError(null);
+  }, []);
+
+  return { connectionStatus, stats, connect, disconnect, error, clearError };
 };

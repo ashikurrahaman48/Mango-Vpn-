@@ -1,4 +1,3 @@
-
 import { Html, Head, Main, NextScript } from 'next/document';
 import React from 'react';
 
@@ -89,6 +88,51 @@ export default function Document() {
             --color-text-primary: #c9d1d9;
             --color-text-secondary: #8b949e;
             --color-text-muted: #8b949e;
+          }
+          [data-theme="ocean"] {
+            --color-primary: #0ea5e9; /* sky-500 */
+            --color-primary-focus: #0284c7; /* sky-600 */
+            --color-primary-content: #ffffff;
+            --color-accent: #06b6d4; /* cyan-500 */
+            --color-bg-primary: #0c1422; /* dark blue */
+            --color-bg-secondary: #12213a; /* darker blue */
+            --color-bg-tertiary: #1a2c4d; /* even darker blue */
+            --color-text-primary: #e0f2fe; /* light blue text */
+            --color-text-secondary: #bae6fd; /* lighter blue text */
+            --color-text-muted: #7dd3fc; /* sky-300 */
+            --color-success: #34d399; /* emerald-400 */
+            --color-warning: #fbbf24; /* amber-400 */
+            --color-error: #f87171; /* red-400 */
+          }
+          [data-theme="forest"] {
+            --color-primary: #16a34a; /* green-600 */
+            --color-primary-focus: #15803d; /* green-700 */
+            --color-primary-content: #ffffff;
+            --color-accent: #22c55e; /* green-500 */
+            --color-bg-primary: #111a14; /* very dark green */
+            --color-bg-secondary: #1c2a22; /* dark green */
+            --color-bg-tertiary: #27392f; /* medium dark green */
+            --color-text-primary: #f0fdf4; /* off-white green */
+            --color-text-secondary: #dcfce7; /* light green text */
+            --color-text-muted: #bbf7d0; /* lighter green text */
+            --color-success: #34d399; /* emerald-400 */
+            --color-warning: #fbbf24; /* amber-400 */
+            --color-error: #f87171; /* red-400 */
+          }
+          [data-theme="dracula"] {
+            --color-primary: #bd93f9; /* purple */
+            --color-primary-focus: #9a65f7;
+            --color-primary-content: #282a36;
+            --color-accent: #ff79c6; /* pink */
+            --color-bg-primary: #282a36;
+            --color-bg-secondary: #3b3d51;
+            --color-bg-tertiary: #44475a;
+            --color-text-primary: #f8f8f2; /* foreground */
+            --color-text-secondary: #bd93f9; /* purple */
+            --color-text-muted: #6272a4; /* comment */
+            --color-success: #50fa7b; /* green */
+            --color-warning: #f1fa8c; /* yellow */
+            --color-error: #ff5555; /* red */
           }
           body {
             background-color: var(--color-bg-primary);

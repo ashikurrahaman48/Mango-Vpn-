@@ -1,4 +1,3 @@
-
 // pages/api/sessions.ts
 import type { NextApiResponse } from 'next';
 import { protect, NextApiRequestWithUser } from '../../middleware/auth';

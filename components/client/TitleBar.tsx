@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MangoVpnLogo } from './Header'; // Re-use the logo component
 

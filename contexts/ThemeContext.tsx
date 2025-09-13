@@ -1,7 +1,6 @@
-
 import React, { createContext, useState, useContext, useEffect, useMemo } from 'react';
 
-export const themes = ['mango', 'dark', 'light', 'material', 'github'] as const;
+export const themes = ['mango', 'dark', 'light', 'material', 'github', 'ocean', 'forest', 'dracula'] as const;
 export type Theme = typeof themes[number];
 
 interface ThemeContextType {

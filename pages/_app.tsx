@@ -1,4 +1,3 @@
-
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import AdminLayout from '../components/admin/Layout';

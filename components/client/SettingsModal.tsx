@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 
@@ -58,7 +57,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
         <div className="p-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-[var(--color-text-primary)] mb-3">Theme</h3>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-4 gap-3">
                 {availableThemes.map((themeName) => (
                   <button
                     key={themeName}

@@ -1,4 +1,3 @@
-
 // types/admin.ts
 
 export type AdminRole = 'viewer' | 'editor' | 'administrator';

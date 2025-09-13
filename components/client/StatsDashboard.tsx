@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ConnectionStatus, type Stats } from '../../types/client';
 import SpeedometerGauge from './SpeedometerGauge';

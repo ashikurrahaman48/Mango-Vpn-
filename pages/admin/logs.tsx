@@ -1,4 +1,3 @@
-
 // pages/admin/logs.tsx
 import React, { useState, useEffect, useCallback } from 'react';
 import type { AdminLog, LogLevel } from '../../types/admin';

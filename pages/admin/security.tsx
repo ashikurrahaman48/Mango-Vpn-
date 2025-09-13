@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const SecurityIcon: React.FC<{ className?: string }> = ({ className }) => (

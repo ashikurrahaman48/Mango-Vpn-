@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { Server } from '../../types/client';
 import { ConnectionStatus } from '../../types/client';

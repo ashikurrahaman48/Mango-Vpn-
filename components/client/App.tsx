@@ -13,6 +13,7 @@ import TitleBar from './TitleBar';
 import MenuBar from './MenuBar';
 import SmartServerFinder from './SmartServerFinder';
 import TroubleshootingChatbot from './TroubleshootingChatbot';
+import Toast from './Toast';
 
 
 const ChatIcon = () => (
@@ -26,12 +27,12 @@ const VpnClientApp: React.FC = () => {
   const [servers, setServers] = useState<Server[]>([]);
   const [selectedServer, setSelectedServer] = useState<Server | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null); // For server list fetching
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [recommendedServerId, setRecommendedServerId] = useState<number | null>(null);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
-  const { connectionStatus, stats, connect, disconnect } = useVpnClient();
+  const { connectionStatus, stats, connect, disconnect, error: connectionError, clearError: clearConnectionError } = useVpnClient();
 
   const isConnected = connectionStatus === ConnectionStatus.CONNECTED;
   const isConnecting = connectionStatus === ConnectionStatus.CONNECTING;
@@ -137,6 +138,7 @@ const VpnClientApp: React.FC = () => {
             isOpen={isChatbotOpen}
             onClose={() => setIsChatbotOpen(false)}
         />
+        {connectionError && <Toast message={connectionError} onClose={clearConnectionError} />}
       </div>
     </div>
   );

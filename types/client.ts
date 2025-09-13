@@ -1,4 +1,3 @@
-
 export interface Server {
   id: number;
   country: string;

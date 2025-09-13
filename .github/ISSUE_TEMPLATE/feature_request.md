@@ -1,45 +1,35 @@
 ---
-name: Feature request
-about: Suggest a new feature or an improvement
-title: ''
-labels: ''
+name: Feature Request
+about: Suggest an idea or new functionality for Mango VPN
+title: '[FEAT] Brief description of the feature'
+labels: 'enhancement, needs-triage'
 assignees: ''
 ---
 
-When proposing a new feature, please provide enough context so maintainers can evaluate and implement it. Use the sections below to make your request actionable.
+<!--
+Thank you for suggesting an idea to improve Mango VPN!
+To help us understand and prioritize your request, please fill out the following sections.
+-->
 
-## Summary
-Provide a one-line summary of the feature or improvement.
+## Summary / Pitch
+A clear and concise description of what you want to happen. What's the elevator pitch for this feature?
 
-## Motivation
-Why is this feature needed? Describe the problem or user pain this solves and who benefits.
+## Problem Statement
+What problem does this feature solve? Why is this change needed?
+*e.g., I'm always frustrated when [...] because [...]*
 
-## User story / Example
-Describe the request as a user story or give an example of how it would be used:
-- As a [type of user], I want [some feature] so that [some reason].
+Is there a workaround for this problem today?
 
-## Proposed solution
-Explain the proposed solution at a high level. Include any important details, UI/UX changes, or API changes.
+## Proposed Solution
+A clear and concise description of how you envision this feature working.
+- How would a user interact with this feature?
+- Are there new UI elements?
+- Are there changes to existing behavior?
 
-## Acceptance criteria
-List measurable conditions that would show the feature is implemented correctly. For example:
-- [ ] The UI has a new "X" button that does Y
-- [ ] The endpoint /api/x accepts parameter y and returns z
+Please be as detailed as possible. Mockups or diagrams are highly encouraged if applicable.
 
-## Alternatives considered
-Describe other approaches you considered and why you rejected them.
+## Alternatives Considered
+Have you considered any alternative solutions or features? Please describe them and why you prefer the proposed solution.
 
-## Migration / Rollout plan (optional)
-If this change needs migration steps, data updates, or a rollout plan, describe them here.
-
-## Impact
-Estimate the scope and impact:
-- Complexity: low / medium / high
-- Breaking change: yes / no
-- Areas affected: frontend / backend / CI / docs / other
-
-## Mockups, screenshots, or references (optional)
-Attach images, sketches, code snippets, or links to related issues and PRs.
-
-## Additional context
-Anything else that will help people evaluate or implement this feature.
+## Additional Context
+Add any other context, screenshots, mockups, or links to related issues or discussions about this feature request here.

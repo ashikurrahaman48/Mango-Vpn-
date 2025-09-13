@@ -1,4 +1,3 @@
-
 import type { NextApiRequest, NextApiResponse } from 'next';
 import ai, { geminiModel } from '../../../lib/gemini';
 import { Content } from '@google/genai';

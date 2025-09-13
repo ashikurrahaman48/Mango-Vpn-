@@ -1,4 +1,3 @@
-
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { verifyToken } from '../utils/auth';
 import User, { IUser } from '../models/User';
