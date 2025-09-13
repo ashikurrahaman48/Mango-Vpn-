@@ -16,8 +16,8 @@ export enum ConnectionStatus {
 
 export interface Stats {
   connectionTime: number;
-  dataDownloaded: number;
-  dataUploaded: number;
+  dataDownloaded: number; // in MB
+  dataUploaded: number; // in MB
   downloadSpeed: number; // in bytes per second
   uploadSpeed: number; // in bytes per second
 }

@@ -1,3 +1,4 @@
+
 // pages/api/dashboard-stats.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import connectDB from '../../utils/db';
@@ -8,7 +9,6 @@ import { logger } from '../../utils/logger';
 import type { DashboardStats } from '../../types/admin';
 
 async function handler(req: NextApiRequestWithUser, res: NextApiResponse<DashboardStats | { message: string }>) {
-  // Fix: Added method check to ensure only GET requests are processed.
   if (req.method !== 'GET') {
     res.setHeader('Allow', ['GET']);
     return res.status(405).end(`Method ${req.method} Not Allowed`);
@@ -48,7 +48,6 @@ async function handler(req: NextApiRequestWithUser, res: NextApiResponse<Dashboa
   }
 }
 
-// Fix: The protect middleware expects a MethodRoles object, not an array of roles.
 export default protect({
   GET: ['viewer', 'editor', 'administrator'],
 })(handler);

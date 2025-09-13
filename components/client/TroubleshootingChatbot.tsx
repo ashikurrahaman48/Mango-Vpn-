@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { MangoVpnLogo } from './Header';
 
@@ -49,7 +50,7 @@ const TroubleshootingChatbot: React.FC<TroubleshootingChatbotProps> = ({ isOpen,
       const decoder = new TextDecoder();
       let botResponse = '';
       
-      setMessages(prev => [...prev, { sender: 'bot', text: '...' }]);
+      setMessages(prev => [...prev, { sender: 'bot', text: '' }]);
 
       while (true) {
         const { done, value } = await reader.read();

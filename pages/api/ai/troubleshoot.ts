@@ -1,7 +1,7 @@
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 import ai, { geminiModel } from '../../../lib/gemini';
-import { Content, Part } from '@google/genai';
+import { Content } from '@google/genai';
 
 interface Message {
   sender: 'user' | 'bot';
@@ -44,6 +44,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.writeHead(200, {
       'Content-Type': 'text/plain; charset=utf-8',
       'Transfer-Encoding': 'chunked',
+      'Connection': 'keep-alive'
     });
 
     for await (const chunk of result) {

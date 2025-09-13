@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useState, useEffect, useCallback } from 'react';
 import { ConnectionStatus, type Server } from '../../types/client';
@@ -9,7 +10,6 @@ import StatsDashboard from './StatsDashboard';
 import SettingsModal from './SettingsModal';
 import { useVpnClient } from '../../hooks/useVpnClient';
 import TitleBar from './TitleBar';
-import Footer from './Footer';
 import MenuBar from './MenuBar';
 import SmartServerFinder from './SmartServerFinder';
 import TroubleshootingChatbot from './TroubleshootingChatbot';
@@ -122,14 +122,13 @@ const VpnClientApp: React.FC = () => {
                 </div>
             </main>
         </div>
-        <Footer />
         <SettingsModal 
             isOpen={isSettingsOpen}
             onClose={() => setIsSettingsOpen(false)}
         />
         <button 
           onClick={() => setIsChatbotOpen(true)}
-          className="absolute bottom-10 right-8 bg-[var(--color-primary)] hover:bg-[var(--color-primary-focus)] text-[var(--color-primary-content)] rounded-full p-4 shadow-lg z-20 transition-transform hover:scale-110"
+          className="absolute bottom-4 right-6 bg-[var(--color-primary)] hover:bg-[var(--color-primary-focus)] text-[var(--color-primary-content)] rounded-full p-4 shadow-lg z-20 transition-transform hover:scale-110"
           aria-label="Open Troubleshooting Assistant"
         >
           <ChatIcon />
