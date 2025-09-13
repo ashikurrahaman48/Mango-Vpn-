@@ -1,47 +1,35 @@
 ---
-name: Bug report
-about: Use this template to report a bug. Please include reproduction steps and environment details so we can triage quickly.
-title: ''
-labels: ''
+name: Feature Request
+about: Suggest an idea or new functionality for Mango VPN
+title: '[FEAT] Brief description of the feature'
+labels: 'enhancement, needs-triage'
 assignees: ''
 ---
 
-## Summary
-A short summary of the bug (one or two sentences).
+<!--
+Thank you for suggesting an idea to improve Mango VPN!
+To help us understand and prioritize your request, please fill out the following sections.
+-->
 
-## Steps to reproduce
-Provide a minimal, ordered list of steps to reproduce the issue:
-1. Go to '...'
-2. Click on '...'
-3. Provide input '...'
-4. Observe '...'
+## Summary / Pitch
+A clear and concise description of what you want to happen. What's the elevator pitch for this feature?
 
-If possible, include a small code sample or link to a minimal reproducible repo.
+## Problem Statement
+What problem does this feature solve? Why is this change needed?
+*e.g., I'm always frustrated when [...] because [...]*
 
-## Expected behavior
-What you expected to happen.
+Is there a workaround for this problem today?
 
-## Actual behavior
-What actually happened, including error messages or incorrect outputs.
+## Proposed Solution
+A clear and concise description of how you envision this feature working.
+- How would a user interact with this feature?
+- Are there new UI elements?
+- Are there changes to existing behavior?
 
-## Reproducible example / Test case (if available)
-Paste code, configuration, or commands that reproduce the bug.
+Please be as detailed as possible. Mockups or diagrams are highly encouraged if applicable.
 
-## Environment
-- Mango VPN version / commit: 
-- OS: (e.g., Windows 10, macOS 12, Android 13)
-- Device (if mobile): 
-- Browser and version (if applicable): 
-- Node / runtime version (if applicable): 
+## Alternatives Considered
+Have you considered any alternative solutions or features? Please describe them and why you prefer the proposed solution.
 
-## Logs and screenshots
-Include any relevant logs, stack traces, or screenshots. Mask any sensitive information.
-
-## Temporary workaround (if any)
-If you found a workaround, describe it here.
-
-## Severity / Priority
-Low / Medium / High — explain how the bug affects normal usage.
-
-## Additional context
-Any other information that might help troubleshoot (related issues, recent changes, etc.)
+## Additional Context
+Add any other context, screenshots, mockups, or links to related issues or discussions about this feature request here.
