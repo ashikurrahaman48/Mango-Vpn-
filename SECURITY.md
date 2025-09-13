@@ -7,19 +7,26 @@ At Mango VPN, we take security seriously. If you believe you've found a security
 ### Reporting Process
 
 1. **DO NOT** disclose the vulnerability publicly
-2. Send a detailed report to [your-security-email@domain.com] including:
-   - Description of the vulnerability
+2. Email your findings to our security team
+3. Include detailed information about:
+   - Vulnerability description
    - Steps to reproduce
    - Potential impact
-   - Any suggested fixes (if available)
+   - Suggested fixes (if any)
 
-### What to Expect
+### Response Timeline
 
-- Acknowledgment of your report within 48 hours
-- Regular updates on our investigation progress
-- Credit for responsible disclosure (if desired)
+- Initial response: Within 48 hours
+- Status updates: Every 72 hours
+- Resolution timeline: Based on severity
+  - Critical: 7 days
+  - High: 14 days
+  - Medium: 30 days
+  - Low: 60 days
 
 ## Supported Versions
+
+Only the latest major version receives security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -28,50 +35,41 @@ At Mango VPN, we take security seriously. If you believe you've found a security
 
 ## Security Features
 
-Mango VPN implements the following security measures:
-
+### Core Security Measures
 - End-to-end encryption
 - No-logs policy
-- Regular security audits
-- Automatic updates
-- Kill switch functionality
-
-## Best Practices
-
-When using Mango VPN:
-
-1. Always keep the application updated
-2. Enable two-factor authentication
-3. Use strong, unique passwords
-4. Report any suspicious activity
-5. Review connection logs regularly
-
-## Security Measures
-
-### Data Protection
-- All user data is encrypted using industry-standard protocols
-- Regular security assessments and penetration testing
-- Strict access control policies
-
-### Network Security
-- Implementation of secure VPN protocols
-- Regular server security updates
-- DDoS protection
+- Kill switch
+- DNS leak protection
 - Perfect forward secrecy
 
-## Compliance
+### Authentication & Data Protection
+- Two-factor authentication support
+- AES-256 encryption
+- Regular security audits
+- Automated security updates
+
+## Best Practices for Users
+
+1. Keep Mango VPN updated
+2. Enable two-factor authentication
+3. Use strong passwords
+4. Monitor connection logs
+5. Report suspicious activities
+
+## Compliance & Standards
 
 Mango VPN adheres to:
 - GDPR requirements
-- Data protection regulations
 - Industry security standards
+- Privacy protection regulations
 
-## Contact
+## Security Audits
 
-For security concerns, contact us at:
-- Security Email: [your-security-email@domain.com]
-- Emergency Contact: [emergency-contact-number]
+- Regular third-party security audits
+- Penetration testing
+- Vulnerability assessments
 
 ## Updates
 
-This security policy is regularly reviewed and updated. Last update: 2025-09-13
+This security policy is reviewed monthly and updated as needed.
+Last updated: 2025-09-13 18:11:24 UTC
