@@ -1,0 +1,5 @@
+{
+  "name": "Mango VPN Connect",
+  "description": "A modern, responsive VPN client dashboard built with React and Tailwind CSS, allowing users to connect to global servers, monitor their connection status, and view usage statistics.",
+  "requestFramePermissions": []
+}
