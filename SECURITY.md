@@ -1,21 +1,33 @@
-# Security Policy
+---
+name: Security Vulnerability Report 🔒
+about: Report a security vulnerability in Mango VPN
+title: '[SECURITY] '
+labels: 'security'
+assignees: ''
+---
 
-## Supported Versions
+**IMPORTANT**: For critical security vulnerabilities, please report privately to our security team instead of creating a public issue.
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+**Describe the Vulnerability**
+A clear and concise description of the security vulnerability.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+**Impact**
+What is the potential impact of this vulnerability if exploited?
 
-## Reporting a Vulnerability
+**To Reproduce**
+Steps to reproduce the vulnerability:
+1. Configure VPN with '...'
+2. Connect to '...'
+3. Perform '...'
+4. See vulnerability
 
-Use this section to tell people how to report a vulnerability.
+**Technical Details**
+- Affected Component: [e.g. Authentication, Encryption, Network Protocol]
+- Affected Versions: [e.g. 1.0.0 - 1.2.0]
+- Affected Platforms: [e.g. Android, iOS, Windows]
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+**Suggested Fix**
+If you have any suggestions for fixing the vulnerability, please describe them here.
+
+**Additional Context**
+Add any other relevant security context or screenshots here.
