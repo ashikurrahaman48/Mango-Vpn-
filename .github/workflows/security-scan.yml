@@ -1,0 +1,32 @@
+name: Security Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Weekly on Monday
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run Snyk security scan
+      uses: snyk/actions/node@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: --severity-threshold=high
+
+    - name: Run CodeQL analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        languages: javascript, typescript
+
+    - name: Dependency audit
+      run: npm audit --audit-level=high
