@@ -1,3 +1,4 @@
+
 // pages/api/servers.ts
 import type { NextApiResponse } from 'next';
 import { protect, NextApiRequestWithUser } from '../../middleware/auth';
@@ -84,7 +85,6 @@ async function handler(req: NextApiRequestWithUser, res: NextApiResponse) {
   }
 }
 
-// Fix: The protect middleware expects a MethodRoles object, not an array of roles. Also corrected 'admin' to valid roles.
 export default protect({
   GET: ['viewer', 'editor', 'administrator'],
   POST: ['editor', 'administrator'],

@@ -1,5 +1,5 @@
 {
-  "name": "Mango VPN Connect",
-  "description": "A modern, responsive VPN client dashboard built with React and Tailwind CSS, allowing users to connect to global servers, monitor their connection status, and view usage statistics.",
+  "name": "Mango VPN Suite",
+  "description": "A full-stack, AI-powered VPN application featuring a modern client with smart server search, a comprehensive admin panel with AI security analysis, and a secure backend infrastructure.",
   "requestFramePermissions": []
 }

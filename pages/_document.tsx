@@ -16,23 +16,18 @@ export default function Document() {
             width: 8px;
           }
           ::-webkit-scrollbar-track {
-            background: #1f2937; /* bg-gray-800 */
+            background: var(--color-bg-secondary, #1f2937);
           }
           ::-webkit-scrollbar-thumb {
-            background: #4b5563; /* bg-gray-600 */
+            background: var(--color-bg-tertiary, #4b5563);
             border-radius: 4px;
           }
           ::-webkit-scrollbar-thumb:hover {
-            background: #6b7280; /* bg-gray-500 */
+            background: #6b7280;
           }
           
           /* THEME VARIABLES */
-          :root {
-            --color-success: #34d399; /* emerald-400 */
-            --color-warning: #fbbf24; /* amber-400 */
-            --color-error: #f87171; /* red-400 */
-          }
-          [data-theme="mango"] {
+          :root, [data-theme="mango"] {
             --color-primary: #f59e0b; /* amber-500 */
             --color-primary-focus: #d97706; /* amber-600 */
             --color-primary-content: #ffffff;
@@ -43,6 +38,9 @@ export default function Document() {
             --color-text-primary: #f9fafb; /* gray-50 */
             --color-text-secondary: #d1d5db; /* gray-300 */
             --color-text-muted: #9ca3af; /* gray-400 */
+            --color-success: #34d399; /* emerald-400 */
+            --color-warning: #fbbf24; /* amber-400 */
+            --color-error: #f87171; /* red-400 */
           }
           [data-theme="dark"] {
             --color-primary: #4f46e5; /* indigo-600 */
@@ -99,7 +97,7 @@ export default function Document() {
           }
         `}</style>
       </Head>
-      <body className="text-white">
+      <body>
         <Main />
         <NextScript />
       </body>

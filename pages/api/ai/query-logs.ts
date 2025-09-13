@@ -5,7 +5,6 @@ import connectDB from '../../../utils/db';
 import Log from '../../../models/Log';
 import { logger } from '../../../utils/logger';
 import ai, { geminiModel } from '../../../lib/gemini';
-import { Type } from '@google/genai';
 
 async function handler(req: NextApiRequestWithUser, res: NextApiResponse) {
   if (req.method !== 'POST') {

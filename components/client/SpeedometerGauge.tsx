@@ -42,7 +42,7 @@ const SpeedometerGauge: React.FC<SpeedometerGaugeProps> = ({ speed, label }) => 
   };
 
   return (
-    <div className="text-center">
+    <div className="text-center bg-[var(--color-bg-secondary)]/50 rounded-2xl p-4">
       <svg viewBox="0 0 100 60" className="w-full h-auto">
         {/* Gauge background track */}
         <path d={arc(0, 180)} fill="none" stroke="var(--color-bg-tertiary)" strokeWidth="8" strokeLinecap="round" />

@@ -1,3 +1,4 @@
+
 import type { NextApiRequest, NextApiResponse } from 'next';
 import ai, { geminiModel } from '../../../lib/gemini';
 import { Server } from '../../../types/client';
@@ -39,7 +40,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     type: Type.INTEGER,
                     description: "The ID of the recommended server."
                 }
-            }
+            },
+            required: ["serverId"]
           }
         }
     });

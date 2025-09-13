@@ -31,6 +31,7 @@ export interface AdminLog {
   level: LogLevel;
   message: string;
   source: string;
+  userId?: string;
 }
 
 export interface DashboardStats {
