@@ -1,38 +1,40 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Bug Report 🐛
+about: Create a detailed report to help us improve Mango VPN
+title: '[BUG] '
+labels: 'bug'
 assignees: ''
 
 ---
 
-**Describe the bug**
+**Describe the Bug**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
+1. Open Mango VPN
+2. Select server '...'
+3. Click on '...'
 4. See error
 
-**Expected behavior**
+**Expected Behavior**
 A clear and concise description of what you expected to happen.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Device Information:**
+- Device Type: [Desktop/Smartphone]
+- OS: [e.g. Windows 10, Android 13, iOS 16]
+- Mango VPN Version: [e.g. 1.2.0]
+- Connection Type: [e.g. WiFi, Mobile Data]
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+**VPN Connection Details:**
+- Server Location: [e.g. US East, Singapore]
+- Protocol Used: [e.g. OpenVPN, WireGuard]
+- Connection Time: [How long were you connected before the issue occurred?]
 
-**Additional context**
-Add any other context about the problem here.
+**Additional Context**
+- Does this happen with specific websites/services?
+- Does this happen with all servers or specific ones?
+- Any other relevant information about the problem
