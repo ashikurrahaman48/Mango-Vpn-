@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Mango VPN Support
+    url: https://mangovpn.com/support
+    about: Please visit our support portal for help and questions
+  - name: Mango VPN Documentation
+    url: https://docs.mangovpn.com
+    about: Check our documentation for guides and tutorials
+  - name: Mango VPN Community
+    url: https://community.mangovpn.com
+    about: Join our community discussions
